@@ -1,0 +1,16 @@
+# lambda fucntion to convert json file to csv file 
+
+# the lambda function is triggered once the file is uploaded to S3, 
+# json file is not a json list, data in the file is lines of json obejcts , tat way the script read the file line by line and load it a json objects 
+
+
+
+# required packages
+boto3
+
+# optional
+# to deploy packages for AWS lambda
+$ python -m virtualenv venv
+$ .\venv\Scripts\activate
+$ pip install -r requirements.tx
+$ deactivate
